@@ -103,6 +103,32 @@ namespace Schenato.Carros.Testes.InfraTestes
         }
 
         [TestMethod]
+        public void Deveria_buscar_todos_os_clientes_fisicos()
+        {
+            //Preparação
+
+            //Ação
+            var clienteBuscado = _repositorio.BuscarTudoFisica();
+
+            //Afirmar
+
+            Assert.IsNotNull(clienteBuscado);
+        }
+
+        [TestMethod]
+        public void Deveria_buscar_todos_os_clientes_juridicos()
+        {
+            //Preparação
+
+            //Ação
+            var clienteBuscado = _repositorio.BuscarTudoJurido();
+
+            //Afirmar
+
+            Assert.IsNotNull(clienteBuscado);
+        }
+
+        [TestMethod]
         public void Deveria_buscar_cliente_por_cpf()
         {
             //Preparação

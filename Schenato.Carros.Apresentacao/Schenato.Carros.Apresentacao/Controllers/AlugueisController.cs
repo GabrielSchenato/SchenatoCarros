@@ -54,15 +54,14 @@ namespace Schenato.Carros.Apresentacao.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Id,Cliente,Automovel,ValorTotal,DataInicio,DataFim")] Aluguel aluguel)
         {
-            ViewBag.Clientes = _repositorioClientes.BuscarTudo();
-            ViewBag.Automoveis = _repositorioAutomoveis.BuscarTudo();
-            if (ModelState.IsValid)
-            {
-                _repositorio.Adicionar(aluguel);
-                return RedirectToAction("Index");
-            }
+            var idCliente = Request.Form["Cliente"];
+            var idAutomovel = Request.Form["Automovel"];
 
-            return View(aluguel);
+            aluguel.Cliente = _repositorioClientes.BuscarPor(Int32.Parse(idCliente));
+            aluguel.Automovel = _repositorioAutomoveis.BuscarPor(Int32.Parse(idAutomovel));
+            aluguel.CalculaTotal();
+            _repositorio.Adicionar(aluguel);
+                return RedirectToAction("Index");
         }
 
         // GET: Alugueis/Edit/5
@@ -73,6 +72,8 @@ namespace Schenato.Carros.Apresentacao.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Aluguel aluguel = _repositorio.BuscarPor((int)id);
+            ViewBag.Clientes = _repositorioClientes.BuscarTudo();
+            ViewBag.Automoveis = _repositorioAutomoveis.BuscarTudo();
             if (aluguel == null)
             {
                 return HttpNotFound();
@@ -92,12 +93,8 @@ namespace Schenato.Carros.Apresentacao.Controllers
             aluguelEditado.Automovel = aluguel.Automovel;
             aluguelEditado.DataInicio = aluguel.DataInicio;
             aluguelEditado.DataFim = aluguel.DataFim;
-            if (ModelState.IsValid)
-            {
                 _repositorio.Editar(aluguelEditado);
                 return RedirectToAction("Index");
-            }
-            return View(aluguel);
         }
 
         // GET: Alugueis/Delete/5
