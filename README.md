@@ -28,7 +28,7 @@
 ------------
 
 
-**Dado:** Nome completo, telefone, endereço, CNPJ.
+**Dado:** Nome completo, telefone, endereço, CNPJ.</br>
 **Quando:** Atendente for manter os dados do cliente jurídico.
 **Então:** Dados do cliente jurídico atuais.
 
