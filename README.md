@@ -15,9 +15,9 @@
 ------------
 
 
-**Dado:** Nome completo, telefone, endereço, CPF, data nascimento e renda.
-**Quando:** Atendente for manter os dados do cliente físico.
-**Então:** Dados do cliente físico atuais.
+**Dado:** Nome completo, telefone, endereço, CPF, data nascimento e renda.</br>
+**Quando:** Atendente for manter os dados do cliente físico.</br>
+**Então:** Dados do cliente físico atuais.</br>
 
 ------------
 
@@ -29,8 +29,8 @@
 
 
 **Dado:** Nome completo, telefone, endereço, CNPJ.</br>
-**Quando:** Atendente for manter os dados do cliente jurídico.
-**Então:** Dados do cliente jurídico atuais.
+**Quando:** Atendente for manter os dados do cliente jurídico.</br>
+**Então:** Dados do cliente jurídico atuais.</br>
 
 ------------
 
@@ -41,9 +41,9 @@
 ------------
 
 
-**Dado: **Nome, potencia, placa, km e valor do aluguel por dia.
-**Quando:** Atendente for manter os dados do automóvel.
-**Então:** Dados do automóvel atuais.
+**Dado: **Nome, potencia, placa, km e valor do aluguel por dia.</br>
+**Quando:** Atendente for manter os dados do automóvel.</br>
+**Então:** Dados do automóvel atuais.</br>
 
 ------------
 
@@ -54,6 +54,6 @@
 ------------
 
 
-**Dado:** Cliente seja ele físico ou jurídico, dados do automóvel escolhido, data de início e data de fim.
-**Quando:** Atendente for manter dados de um aluguel.
-**Então:** O atendente vai saber o valor final da locação do veículo e para quem vai ser locado.
+**Dado:** Cliente seja ele físico ou jurídico, dados do automóvel escolhido, data de início e data de fim.</br>
+**Quando:** Atendente for manter dados de um aluguel.</br>
+**Então:** O atendente vai saber o valor final da locação do veículo e para quem vai ser locado.</br>
