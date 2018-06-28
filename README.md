@@ -41,7 +41,7 @@
 ------------
 
 
-**Dado: **Nome, potencia, placa, km e valor do aluguel por dia.</br>
+**Dado:** Nome, potencia, placa, km e valor do aluguel por dia.</br>
 **Quando:** Atendente for manter os dados do automóvel.</br>
 **Então:** Dados do automóvel atuais.</br>
 
