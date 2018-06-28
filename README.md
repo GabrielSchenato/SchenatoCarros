@@ -1,4 +1,4 @@
-[![Logo Uniplac](https://uniplaclages.edu.br/assets/img/logo.png "Logo Uniplac")](https://github.com/GabrielSchenato/ "Logo Uniplac")
+[![N|Logo Uniplac](https://uniplaclages.edu.br/assets/img/logo.png)](https://github.com/GabrielSchenato/)
 ------------
 
 <p align="center">Schenato Carros</p>
